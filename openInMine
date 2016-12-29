@@ -1,10 +1,8 @@
-#!/home/andrew/.rvm/bin/rvm-auto-ruby
-#Change the #! line to reflect the location of ruby in your environment
+#!/usr/bin/env ruby
 
 require 'uri'
 require 'cgi'
 my_url = CGI::parse(URI::parse(ARGV[0]).query)
 file = URI::parse(my_url['url'][0]).path
 line = my_url['line'][0]
-#create the launcher first:  Tools -> Create Command-line Launcher...
 exec "mine -l #{line} #{file}"
