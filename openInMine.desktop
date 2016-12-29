@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=openInMine
+Comment=RubyMine mine cmd
+Exec=/usr/local/bin/openInMine %u
+Terminal=false
+Type=Application
+Categories=Application;
+StartupNotify=false
+MimeType=x-scheme-handler/txmt;
+NoDisplay=true
